@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  flex-direction: row;
+  align-items: cenrter;
+}
+.banner img {
+  width: 150px;
+  height: auto;
+}
+.main-nav {
+  padding: 0 0 0 100px;
+}
+.main-nav .interactive-nav {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  color: black;
+  background: #db8876;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 4px 0 0 0;
+}
+ul {
+  list-style: none;
+}
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+.tags li {
+  display: flex;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 30px;
+  margin: 3px 6px 3px 0;
+  color: #901c1c;
+  padding: 2px 7px;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.tags a:before {
+  content: "#";
+}
+.main-content h1 {
+  color: #901c1c;
+  font-weight: 400;
+  font-size: 1em;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+.photographers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.photographers-elements {
+  text-align: center;
+  padding-bottom: 30px;
+  min-width: 300px;
+}
+.photographers-elements img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.photographers-elements h2 {
+  color: #d3573c;
+  font-weight: 400;
+  font-size: 2em;
+  margin-top: 10px;
+}
+.photographers-elements .infos span {
+  display: block;
+  font-size: 0.7em;
+  padding: 1px 0;
+}
+.infos-city {
+  color: #901c1c;
+}
+.infos-price {
+  color: #757575;
+  font-style: italic;
+}
