@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>FishEye - Mimi Keel</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="pages.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- BANNER -->
+    <header class="banner" id="header-banner" aria-hidden="false">
+      <a href="index.html" title="Homepage">
+        <img src="/logo.png" alt="Fisheye Home page" width="512" height="128" />
+      </a>
+    </header>
+
+    <!-- MAIN PHOTOGRAPHER PAGE-->
+    <main class="photographer-page" id="photographer-page" aria-hidden="false">
+      <header class="ph-header" aria-label="photographer information">
+        <div class="ph-infos">
+          <h1 class="ph-name" id="ph-title">Mimi Keel</h1>
+          <span class="ph-city" id="ph-city">London, UK</span>
+          <span class="ph-tagline" id="ph-tagline"
+            >Voir le beau dans le quotidien</span
+          >
+          <ul class="tags" id="ph-tags"></ul>
+        </div>
+        <button
+          type="button"
+          class="ph-contact"
+          id="ph-contact"
+          title="Contact Me"
+        >
+          Contactez-moi
+        </button>
+        <img
+          src="/Photographers ID Photos/MimiKeel.jpg"
+          alt=""
+          id="ph-portrait"
+        />
+      </header>
+
+      <section class="ph-works" aria-label="photographer works">
+        <div class="works-sort">
+          <span id="sort-label" class="sort-label">Trier par</span>
+          <div id="sort-wrapper">
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="sort-label sort-btn"
+              id="sort-btn"
+              class="sort-btn"
+            >
+              Popularité
+              <span class="fas fa-chevron-down sort-arrow"></span>
+            </button>
+            <ul
+              id="sort-list"
+              tabindex="-1"
+              role="listbox"
+              aria-labelledby="sort-label"
+              class="sort-list hidden"
+            >
+              <li id="sort-1" role="option" tabindex="-1">
+                Popularité<span class="fas fa-chevron-up sort-arrow"></span>
+              </li>
+              <li id="sort-2" role="option" tabindex="-1">Date</li>
+              <li id="sort-3" role="option" tabindex="-1">Titre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works-elts" id="works-elts">
+          <div class="work-elt">
+            <a href="#" title="Animals Wild Horses in the mountains">
+              <video class="video-elt" role="button">
+                "Animals Wild Horses in the mountains"
+                <source src="/Mimi/Animals_Wild_Horses_in_the_mountains.mp4" />
+              </video>
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Animals Wild Horses in the mountains</h2>
+              <span class="work-price">60 €</span>
+              <span class="work-like" id=""
+                >"150"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Travel Lonesome">
+              <img
+                src="/Mimi/Travel_Lonesome.jpg"
+                alt="Travel Lonesome"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Travel Lonesome</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"90"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Travel Hill side Color">
+              <img
+                src="/Mimi/Travel_HillsideColor.jpg"
+                alt="Travel Hill side Color"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Travel Hill side Color</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"85"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Event Benevides Wedding">
+              <img
+                src="/Mimi/Event_BenevidesWedding.jpg"
+                alt="Event Benevides Wedding"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Event Benevides Wedding</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"70"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Portrait Nora">
+              <img
+                src="/Mimi/Portrait_Nora.jpg"
+                alt="Portrait Nora"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Portrait Nora</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"60"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Animals Rainbow">
+              <img
+                src="/Mimi/Animals_Rainbow.jpg"
+                alt="Animals Rainbow"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Animals Rainbow</h2>
+              <span class="work-price">60 €</span>
+              <span class="work-like" id=""
+                >"58"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Portrait Background">
+              <img
+                src="/Mimi/Portrait_Background.jpg"
+                alt="Portrait Background"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Portrait Background</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"55"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Event Pinto Wedding">
+              <img
+                src="/Mimi/Event_PintoWedding.jpg"
+                alt="Event Pinto Wedding"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Event Pinto Wedding</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"40"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Portrait Wednesday">
+              <img
+                src="/Mimi/Portrait_Wednesday.jpg"
+                alt="Portrait Wednesday"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Portrait Wednesday</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"35"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Event Seaside Wedding">
+              <img
+                src="/Mimi/Event_SeasideWedding.jpg"
+                alt="Event Benevides Wedding"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Event Seaside Wedding</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >"25"
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="ph-data" aria-label="photographer likes and price">
+        <span id="total-likes">
+          "680"
+          <i class="fas fa-heart" aria-label="likes"></i>
+        </span>
+        <span>400 € / jour</span>
+      </aside>
+    </main>
+
+    <!-- FORM -->
+    <div class="cover" id="cover" aria-hidden="true"></div>
+    <div
+      role="dialog"
+      class="form-dialog"
+      id="form-dialog"
+      aria-label="contact me form"
+      aria-labelledby="form-title"
+      aria-hidden="true"
+    >
+      <form
+        action="photographer-page.html"
+        method="POST"
+        class="contact-form"
+        id="contact-form"
+      >
+        <header aria-label="contact form header">
+          <h1 id="form-title">
+            <span>Contactez-moi</span>
+            <span class="ph-form-name" id="ph-form-name"></span>
+          </h1>
+          <button id="close-btn" title="Close form" type="button">
+            <span
+              class="fas fa-times close-form-icon"
+              aria-hidden="true"
+            ></span>
+          </button>
+        </header>
+
+        <label for="first-name" id="label-firstname">Prénom</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          aria-labelledby="label-firstname"
+        />
+
+        <label for="last-name" id="label-lastname">Nom</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          aria-labelledby="label-lastname"
+        />
+
+        <label for="email" id="label-email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          aria-labelledby="label-email"
+        />
+
+        <label for="message" id="label-message">Votre message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="20"
+          rows="5"
+          aria-labelledby="label-message"
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Envoyer"
+          class="form-submit"
+          title="Send"
+          id="form-submit-btn"
+        />
+      </form>
+    </div>
+  </body>
+</html>
