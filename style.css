@@ -2,6 +2,9 @@
   margin: 0;
   font-family: "DM Sans", sans-serif;
 }
+.tags a {
+  color: #901c1c;
+}
 a {
   text-decoration: none;
 }

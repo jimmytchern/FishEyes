@@ -6,13 +6,13 @@
 }
 .banner {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   padding: 40px 20px 20px 20px;
 }
 .banner img {
-  width: 150px;
+  width: 200px;
   height: auto;
+  margin-left: -30px;
 }
 .ph-header {
   display: flex;
@@ -26,12 +26,20 @@
     padding: 63px 35px 48px 65px;
     background: #fafafa;
   }
+  .ph-infos .ph-city {
+    font-size: 1.2em;
+  }
   .ph-contact {
     left: 480px;
     top: 60px;
   }
-  .banner img {
-    width: 200;
+  .banner {
+    flex-direction: row;
+    align-items: center;
+  }
+  .works-elts {
+    margin: 45px 100px;
+    padding: 0;
   }
 }
 .ph-infos .ph-name {
@@ -46,7 +54,7 @@
 .ph-tagline {
   display: block;
   font-size: 0.9em;
-  margin: 15px;
+  margin: 15px 0px;
   color: #525252;
 }
 .tags {
@@ -55,9 +63,28 @@
   flex-wrap: wrap;
   margin: 5px 0;
 }
+.tags a {
+  color: #901c1c;
+  font-weight: bold;
+}
+.tags a::before {
+  content: "#";
+}
+.ul {
+  list-style: none;
+}
+.tags li {
+  display: flex;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 30px;
+  margin: 3px 6px 3px 0;
+  color: #901c1c;
+  padding: 2px 7px;
+  font-weight: 500;
+  font-size: 0.8em;
+}
 .ph-contact {
   top: 0;
-  transform: translateX(0);
   height: 70px;
   background: #901c1c;
   width: 170px;
@@ -73,8 +100,8 @@
 .ph-header img {
   object-fit: cover;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 .works-sort {
   display: block;
@@ -149,6 +176,7 @@
   font-size: 1.1em;
   font-weight: 500;
   width: 335px;
+  margin: 0 5px 30px 0px;
 }
 .work-elt a {
   color: #901c1c;
@@ -162,9 +190,15 @@ a {
   object-fit: cover;
   border-radius: 5px;
 }
-.work-elt img {
-  width: 350px;
-  height: 300px;
+.work-elt img,
+.work-elt video {
+  width: 335px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.work-elt img:hover {
+  cursor: pointer;
 }
 .work-elt-infos {
   display: flex;
@@ -192,4 +226,65 @@ a {
   padding: 0 35px;
   font-weight: 500;
   font-size: 1.2em;
+}
+@media (min-width: 900px) {
+  .ph-data {
+    display: flex;
+  }
+}
+.form-dialog {
+  min-width: 300px;
+  max-width: 650px;
+  display: none;
+  z-index: 2;
+  width: 100%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background: #db8876;
+  border-radius: 5px;
+  padding: 25px 35px 35px 35px;
+  box-shadow: 0 0 15px #666;
+}
+.contact-form header {
+  display: flex;
+  justify-content: space-between;
+  margin: -5px 5px 20px 0;
+}
+.contact-form h1 {
+  font-weight: 400;
+  font-size: 2.6em;
+}
+.contact-form .ph-form-name {
+  display: block;
+}
+.contact-form button {
+  background: none;
+  border: none;
+}
+.contact-form label {
+  font-size: 1.6em;
+  margin: 5px 0 5px 0;
+}
+.contact-form input,
+.contact-form textarea {
+  font-size: 1.6em;
+}
+.cover {
+  position: fixed;
+  background: rgba(196, 196, 196, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.form-submit {
+  margin-top: 25px;
+  background: #901c1c;
+  color: #fff;
+  font-size: 1em;
+  width: 170px;
+  align-self: center;
 }
