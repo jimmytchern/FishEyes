@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>FishEye - Mimi Keel</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="pages.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- BANNER -->
+    <header class="banner" id="header-banner" aria-hidden="false">
+      <a href="index.html" title="Homepage">
+        <img src="/logo.png" alt="Fisheye Home page" width="512" height="128" />
+      </a>
+    </header>
+
+    <!-- MAIN PHOTOGRAPHER PAGE-->
+    <main class="photographer-page" id="photographer-page" aria-hidden="false">
+      <header class="ph-header" aria-label="photographer information">
+        <div class="ph-infos">
+          <h1 class="ph-name" id="ph-title">Tracy Galindo</h1>
+          <span class="ph-city" id="ph-city">Montreal, Canada</span>
+          <span class="ph-tagline" id="ph-tagline">Photographe freelance</span>
+          <ul class="tags" id="ph-tags">
+            <li>
+              <a class="filter-tag" href="/index.html" title="Art">Art</a>
+            </li>
+            <li>
+              <a class="filter-tag" href="/index.html" title="event">Events</a>
+            </li>
+            <li>
+              <a class="filter-tag" href="/index.html" title="Fashion"
+                >Fashion</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="ph-contact"
+          id="ph-contact"
+          title="Contact Me"
+        >
+          Contactez-moi
+        </button>
+        <img
+          src="/Photographers ID Photos/TracyGalindo.jpg"
+          alt=""
+          id="ph-portrait"
+        />
+      </header>
+
+      <section class="ph-works" aria-label="photographer works">
+        <div class="works-sort">
+          <span id="sort-label" class="sort-label">Trier par</span>
+          <div id="sort-wrapper">
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="sort-label sort-btn"
+              id="sort-btn"
+              class="sort-btn"
+            >
+              Popularité
+              <span class="fas fa-chevron-down sort-arrow"></span>
+            </button>
+            <ul
+              id="sort-list"
+              tabindex="-1"
+              role="listbox"
+              aria-labelledby="sort-label"
+              class="sort-list hidden"
+              style="display: none"
+            >
+              <li id="sort-1" role="option" tabindex="-1">
+                Popularité<span class="fas fa-chevron-up sort-arrow"></span>
+              </li>
+              <li id="sort-2" role="option" tabindex="-1">Date</li>
+              <li id="sort-3" role="option" tabindex="-1">Titre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works-elts" id="works-elts">
+          <div class="work-elt">
+            <a href="#" title="Art Wooden Horse Sculpture">
+              <video class="video-elt" role="button">
+                "Art Wooden Horse Sculpture"
+                <source src="/Tracy/Art_Wooden_Horse_Sculpture.mp4" />
+              </video>
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Art Wooden Horse Sculpture</h2>
+              <span class="work-price">100 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Art Mine">
+              <img src="/Tracy/Art_Mine.jpg" alt="Art Mine" role="button" />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Art Mine</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Art Triangle Man">
+              <img
+                src="/Tracy/Art_Triangle_Man.jpg"
+                alt="Art Triangle Man"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Art Triangle Man</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Fashion Pattern on Pattern">
+              <img
+                src="/Tracy/Fashion_Pattern_on_Pattern.jpg"
+                alt="Fashion Pattern on Pattern"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Fashion Pattern on Pattern</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Event Weddding Gazebo">
+              <img
+                src="/Tracy/Event_WeddingGazebo.jpg"
+                alt="Event WeddingGazebo"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Event Weeding Gazebo</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Fashion_Yellow_Beach">
+              <img
+                src="/Tracy/Fashion_Yellow_Beach.jpg"
+                alt="Fashion Yellow Beach"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Fashion Yellow Beach</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Event 18th Anniversary">
+              <img
+                src="/Tracy/Event_18thAnniversary.jpg"
+                alt="Event 18th Anniversary"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Event 18th Anniversary</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Art Purple Light">
+              <img
+                src="/Tracy/Art_Purple_light.jpg"
+                alt="Art Purple Light"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Art Purple Light</h2>
+              <span class="work-price">55 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Fashion Urban Jungle">
+              <img
+                src="/Tracy/Fashion_Urban_Jungle.jpg"
+                alt="Fashion Urban Jungle"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Fashion Urban Jungle</h2>
+              <span class="work-price">65 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Event Sparklers">
+              <img
+                src="/Tracy/Event_Sparklers.jpg"
+                alt="Event Sparklers"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Event Sparklers</h2>
+              <span class="work-price">45 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="ph-data" aria-label="photographer likes and price">
+        <span id="total-likes">
+          0
+          <i class="fas fa-heart" aria-label="likes"></i>
+        </span>
+        <span>500 € / jour</span>
+      </aside>
+    </main>
+
+    <!-- FORM -->
+    <div class="cover" id="cover" aria-hidden="true"></div>
+    <div
+      role="dialog"
+      class="form-dialog"
+      id="form-dialog"
+      aria-label="contact me form"
+      aria-labelledby="form-title"
+      aria-hidden="true"
+    >
+      <form
+        action="photographer-page.html"
+        method="POST"
+        class="contact-form"
+        id="contact-form"
+      >
+        <header aria-label="contact form header">
+          <h1 id="form-title">
+            <span>Contactez-moi</span>
+            <span class="ph-form-name" id="ph-form-name">Tracy Galindo</span>
+          </h1>
+          <button id="close-btn" title="Close form" type="button">
+            <span
+              class="fas fa-times close-form-icon"
+              aria-hidden="true"
+            ></span>
+          </button>
+        </header>
+
+        <label for="first-name" id="label-firstname">Prénom</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          aria-labelledby="label-firstname"
+        />
+
+        <label for="last-name" id="label-lastname">Nom</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          aria-labelledby="label-lastname"
+        />
+
+        <label for="email" id="label-email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          aria-labelledby="label-email"
+        />
+
+        <label for="message" id="label-message">Votre message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="20"
+          rows="5"
+          aria-labelledby="label-message"
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Envoyer"
+          class="form-submit"
+          title="Send"
+          id="form-submit-btn"
+        />
+      </form>
+    </div>
+  </body>
+</html>

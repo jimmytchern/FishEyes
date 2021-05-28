@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>FishEye - Ellie-Rose Wilkens</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="pages.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- BANNER -->
+    <header class="banner" id="header-banner" aria-hidden="false">
+      <a href="index.html" title="Homepage">
+        <img src="/logo.png" alt="Fisheye Home page" width="512" height="128" />
+      </a>
+    </header>
+
+    <!-- MAIN PHOTOGRAPHER PAGE-->
+    <main class="photographer-page" id="photographer-page" aria-hidden="false">
+      <header class="ph-header" aria-label="photographer information">
+        <div class="ph-infos">
+          <h1 class="ph-name" id="ph-title">Ellie-Rose Wilkens</h1>
+          <span class="ph-city" id="ph-city">Paris, France</span>
+          <span class="ph-tagline" id="ph-tagline"
+            >Capturer des compositions complexes</span
+          >
+          <ul class="tags" id="ph-tags">
+            <li>
+              <a class="filter-tag" href="/index.html" title="Sports">Sports</a>
+            </li>
+            <li>
+              <a class="filter-tag" href="/index.html" title="Architecture"
+                >Architecture</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="ph-contact"
+          id="ph-contact"
+          title="Contact Me"
+        >
+          Contactez-moi
+        </button>
+        <img
+          src="/Photographers ID Photos/EllieRoseWilkens.jpg"
+          alt=""
+          id="ph-portrait"
+        />
+      </header>
+
+      <section class="ph-works" aria-label="photographer works">
+        <div class="works-sort">
+          <span id="sort-label" class="sort-label">Trier par</span>
+          <div id="sort-wrapper">
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="sort-label sort-btn"
+              id="sort-btn"
+              class="sort-btn"
+            >
+              Popularité
+              <span class="fas fa-chevron-down sort-arrow"></span>
+            </button>
+            <ul
+              id="sort-list"
+              tabindex="-1"
+              role="listbox"
+              aria-labelledby="sort-label"
+              class="sort-list hidden"
+              style="display: none"
+            >
+              <li id="sort-1" role="option" tabindex="-1">
+                Popularité<span class="fas fa-chevron-up sort-arrow"></span>
+              </li>
+              <li id="sort-2" role="option" tabindex="-1">Date</li>
+              <li id="sort-3" role="option" tabindex="-1">Titre</li>
+            </ul>
+          </div>
+        </div>
+        <div class="works-elts" id="works-elts">
+          <div class="work-elt">
+            <a href="#" title="Sport Tricks in the air">
+              <video class="video-elt" role="button">
+                "Animals Wild Horses in the mountains"
+                <source src="/Ellie Rose/Sport_Tricks_in_the_air.mp4" />
+              </video>
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Sport Tricks in the air</h2>
+              <span class="work-price">70 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Sport water tunel">
+              <img
+                src="/Ellie Rose/sport_water_tunnel.jpg"
+                alt="Sport water tunnel"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Sport water tunel</h2>
+              <span class="work-price">70 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Sport next hold">
+              <img
+                src="/Ellie Rose/Sport_Next_Hold.jpg"
+                alt="Sport Next Hold"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Sport Next Hold</h2>
+              <span class="work-price">65 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Sport Jump">
+              <img
+                src="/Ellie Rose/Sport_Jump.jpg"
+                alt="Sport Jump"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Sport Jump</h2>
+              <span class="work-price">70 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Sport Race End">
+              <img
+                src="/Ellie Rose/Sport_Race_End.jpg"
+                alt="Sport Race End"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Sport Race End</h2>
+              <span class="work-price">65 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Architecture Horseshoe">
+              <img
+                src="/Ellie Rose/Architecture_Horseshoe.jpg"
+                alt="Architecture Horseshoe"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Architecture Horseshoe</h2>
+              <span class="work-price">71 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Architecture Connected Curves">
+              <img
+                src="/Ellie Rose/Architecture_Connected_Curves.jpg"
+                alt="Architecture Connected Curves"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Architecture Connected Curves</h2>
+              <span class="work-price">80 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Sport sky cross">
+              <img
+                src="/Ellie Rose/Sport_Sky_Cross.jpg"
+                alt="Sport sky cross"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Sport sky cross</h2>
+              <span class="work-price">50 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Architecture Cross Bar">
+              <img
+                src="/Ellie Rose/Architecture_Cross_Bar.jpg"
+                alt="Architecture Cross Bar"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Architecture Cross Bar</h2>
+              <span class="work-price">58 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Architecture water on modern">
+              <img
+                src="/Ellie Rose/Architecture_Water_on_Modern.jpg"
+                alt="Architecture Water on Modern"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Architecture Water on Modern</h2>
+              <span class="work-price">70 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="work-elt">
+            <a href="#" title="Architecture White Light">
+              <img
+                src="/Ellie Rose/Architecture_White_Light.jpg"
+                alt="Architecture White Light"
+                role="button"
+              />
+            </a>
+            <div class="work-elt-infos">
+              <h2 class="work-title">Architecture White Light</h2>
+              <span class="work-price">95 €</span>
+              <span class="work-like" id=""
+                >0
+                <span
+                  class="fas fa-heart"
+                  aria-label="likes"
+                  role="button"
+                  tabindex="0"
+                >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="ph-data" aria-label="photographer likes and price">
+        <span id="total-likes">
+          0
+          <i class="fas fa-heart" aria-label="likes"></i>
+        </span>
+        <span>250 € / jour</span>
+      </aside>
+    </main>
+
+    <!-- FORM -->
+    <div class="cover" id="cover" aria-hidden="true"></div>
+    <div
+      role="dialog"
+      class="form-dialog"
+      id="form-dialog"
+      aria-label="contact me form"
+      aria-labelledby="form-title"
+      aria-hidden="true"
+    >
+      <form
+        action="photographer-page.html"
+        method="POST"
+        class="contact-form"
+        id="contact-form"
+      >
+        <header aria-label="contact form header">
+          <h1 id="form-title">
+            <span>Contactez-moi</span>
+            <span class="ph-form-name" id="ph-form-name"
+              >Ellie-Rose Wilkens</span
+            >
+          </h1>
+          <button id="close-btn" title="Close form" type="button">
+            <span
+              class="fas fa-times close-form-icon"
+              aria-hidden="true"
+            ></span>
+          </button>
+        </header>
+
+        <label for="first-name" id="label-firstname">Prénom</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          aria-labelledby="label-firstname"
+        />
+
+        <label for="last-name" id="label-lastname">Nom</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          aria-labelledby="label-lastname"
+        />
+
+        <label for="email" id="label-email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          aria-labelledby="label-email"
+        />
+
+        <label for="message" id="label-message">Votre message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="20"
+          rows="5"
+          aria-labelledby="label-message"
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Envoyer"
+          class="form-submit"
+          title="Send"
+          id="form-submit-btn"
+        />
+      </form>
+    </div>
+  </body>
+</html>
