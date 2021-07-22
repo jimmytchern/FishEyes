@@ -233,11 +233,15 @@ a {
   }
 }
 .form-dialog {
-  min-width: 300px;
-  max-width: 650px;
   display: none;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
   width: 100%;
+  max-width: 670px;
 }
 .contact-form {
   display: flex;
@@ -287,4 +291,19 @@ a {
   font-size: 1em;
   width: 170px;
   align-self: center;
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+.lightbox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1250px;
+  height: 100vh;
+  display: none;
 }
