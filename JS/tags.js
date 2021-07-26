@@ -1,6 +1,6 @@
 "use strict";
-import data from "./data";
-import { createPhotographerElt } from "./elementPhotographers";
+import data from "../JS/data";
+import { createPhotographerElt } from "../JS/elementPhotographers";
 
 //FilterTag
 //DOM element

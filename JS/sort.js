@@ -1,6 +1,6 @@
 "use strict";
 
-import { createPhotographerWorksSection } from "./photographerPages";
+import { createPhotographerWorksSection } from "../JS/photographerPages";
 
 //DOM element
 const sortCoverElt = document.getElementById("sort-cover");

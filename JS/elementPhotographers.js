@@ -5,9 +5,11 @@ import {
   createImgElt,
   createTextualElt,
   createInteractiveListElt,
-} from "./Utilitaires";
+} from "../JS/Utilitaires";
+import { data } from "../JS/data";
 
 //Construire l'element photographe DOM
+
 const createPhotographerElt = (data) => {
   const articleElt = createEltWithClassName("article", "photographers-elt");
   const aElt = createLinkElt(`photographer-page.html?id=${data.id}`, data.name);

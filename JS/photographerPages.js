@@ -8,17 +8,17 @@ import {
   createEltWithClassName,
   createTextualElt,
   createLinkElt,
-} from "./utilitaires";
-import { addPhotographerNameInForm } from "./modal";
-import { createTotalLikeElt, incrementLikesOnKeyboard } from "./like";
+} from "../JS/utilitaires";
+import { addPhotographerNameInForm } from "../JS/modal";
+import { createTotalLikeElt, incrementLikesOnKeyboard } from "../JS/like";
 import {
   manageLightBox,
   configureLightboxControls,
   manageLightBoxOnKeyboard,
-} from "./lightbox";
-import { sortPhotographers, manageSortEvents } from "./sort";
-import mediaPlant from "./mediaPlant";
-import data from "./data";
+} from "../JS/lightbox";
+import { sortPhotographers, manageSortEvents } from "../JS/sort";
+import mediaPlant from "../JS/mediaPlant";
+import data from "../JS/data";
 //DOM
 const headerBannerElt = document.getElementById("header-banner");
 const photographerPageElt = document.getElementById("photographer-page");

@@ -1,7 +1,7 @@
 "use strict";
 
-import { createEltWithClassName } from "./Utilitaires";
-import { photographerWorks } from "./photographerPages";
+import { createEltWithClassName } from "../JS/Utilitaires";
+import { photographerWorks } from "../JS/photographerPages";
 
 //DOM
 const worksElt = document.getElementById("works-elts");

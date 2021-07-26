@@ -1,9 +1,9 @@
-import { createPhotographerElt } from "./elementPhotographers";
+import { createPhotographerElt } from "../JS/elementPhotographers";
 import {
   getFilteredPhotographers,
   toggleFilter,
   checkFilterOnPageCreation,
-} from "./tags";
+} from "../JS/tags";
 
 //DOM
 const photographersElt = document.getElementById("photographers");

@@ -3,9 +3,9 @@ import {
   openDialogModal,
   closeDialogModal,
   photographerWorks,
-} from "./photographerPages";
-import { createTextualElt } from "./Utilitaires";
-import { mediaPlant } from "./mediaPlant";
+} from "../JS/photographerPages";
+import { createTextualElt } from "../JS/Utilitaires";
+import { mediaPlant } from "../JS/mediaPlant";
 
 // Position du média actuel
 let indexCurrentMedia = -1;

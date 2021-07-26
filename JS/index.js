@@ -1,11 +1,10 @@
 "use strict";
-import "./page.css";
-import { createHomepage } from "./main";
-import { createPhotographerPage } from "./photographerPages";
+import { createHomepage } from "../JS/main";
+import { createPhotographerPage } from "../JS/photographerPages";
 
 const path = window.location.pathname;
 // Créer une page correcte en fonction du nom de chemin
-if (path.includes("photographer-page.html")) createPhotographerPage();
+if (path.includes("photographerPages.html")) createPhotographerPage();
 else {
   const linkElt = document.getElementById("link-content");
   createHomepage();

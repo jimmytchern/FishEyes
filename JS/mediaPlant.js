@@ -1,4 +1,4 @@
-import { createImgElt, createTextualElt } from "./utilitaires";
+import { createImgElt, createTextualElt } from "../JS/utilitaires";
 
 class imagePlant {
   constructor(props) {
