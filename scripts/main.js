@@ -70,11 +70,12 @@ function displayTags() {
       e.preventDefault();
       a.classList.toggle("tag--selected");
       displayPhotographers();
+      //LOG du click du tag
+      //console.log("le tag est cliquer");
     });
   });
 }
 // fonction : Afficher des photographes suivant le tag selectionner
-
 function displayPhotographers() {
   const main = document.querySelector("#main");
 
@@ -84,6 +85,7 @@ function displayPhotographers() {
   main.innerHTML = "";
   document.querySelectorAll(".tag--selected").forEach((tagselected) => {
     filters.push(tagselected.textContent.replace("#", ""));
+    // console.log(filters.push(tagselected.textContent.replace("#", "")));
   });
 
   photographerList.getPhotographerList(...filters).forEach((photographer) => {

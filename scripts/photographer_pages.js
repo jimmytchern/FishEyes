@@ -248,9 +248,12 @@ export function displayMediaList() {
       });
     }
     cardsMediaImg.addEventListener("click", (e) => e.preventDefault());
-    cardsMediaImg.addEventListener("click", () =>
-      displayLightbox(media, displayMediaList)
-    );
+    console.log("cardMedia");
+    cardsMediaImg.addEventListener("click", () => {
+      console.log("je clique sur le media");
+      //Probleme affichage lighbox
+      displayLightbox(media, displayMediaList);
+    });
     return filters;
   });
 }
@@ -291,7 +294,7 @@ function displayTotalLikes() {
   priceContainer.append(price);
   totalLikesContainer.append(totalLikesNb, priceContainer);
 }
-
+//--Lighbox--
 // La fonctions displayLightbox permet d'ouvrir /fermer la lightbox et de naviguer entre les médias
 // media : le media courant
 // displayMediaList : liste des medias trier
@@ -313,14 +316,19 @@ function displayLightbox(media, displayMediaList) {
   previous.addEventListener("click", previousSlide);
   closeBtn.addEventListener("click", closelightbox);
 
-  lightboxModal.addEventListener("keydown", (e) => {
-    if (e.code === "Escape") {
+  // pb d'accessibilité touche fleché
+  console.log("cooucou");
+  document.addEventListener("keydown", (e) => {
+    console.log(e);
+    console.log(e.key);
+    if (e.key === "Escape") {
+      console.log("escape");
       closelightbox(e, media);
     }
-    if (e.code === "ArrowRight") {
+    if (e.key === "ArrowRight") {
       nextSlide(e);
     }
-    if (e.code === "ArrowLeft") {
+    if (e.key === "ArrowLeft") {
       previousSlide(e);
     }
   });
@@ -369,12 +377,14 @@ function displayLightbox(media, displayMediaList) {
   displayContent();
   function displayContent() {
     if (currentMedia.type === "jpg") {
+      console.log("type1");
       mediaVid.replaceWith(mediaImg);
       mediaImg.src = `sources/img/2_medium/${currentPhotographer.getFolderName()}/${
         currentMedia.link
       }`;
       mediaImg.alt = currentMedia.alt;
       slideContainer.appendChild(mediaImg);
+      console.log(slideContainer);
     } else if (currentMedia.type === "mp4") {
       mediaVid.src = `sources/img/2_medium/${currentPhotographer.getFolderName()}/${
         currentMedia.link
